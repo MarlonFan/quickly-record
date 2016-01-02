@@ -1,0 +1,9 @@
+/* 数据库配置 */
+export var database = {
+    type: '',                   //数据库类型
+    name: '',                   //数据库名
+    host: '',                   //数据库主机
+    port: 0,                    //数据端口
+    username: '',               //数据库用户名
+    password: ''                //数据库密码
+}

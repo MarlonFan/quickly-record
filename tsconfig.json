@@ -1,0 +1,49 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "isolatedModules": false,
+        "jsx": "react",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": false,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "sourceMap": true,
+        "outDir": "bld"
+    },
+    "filesGlob": [
+        "**/*.ts",
+        "**/*.tsx",
+        "!node_modules/**"
+    ],
+    "compileOnSave": true,
+    "buildOnSave": false,
+    "files": [
+        "src/api/user.ts",
+        "src/config.ts",
+        "src/page/desktop/default.ts",
+        "src/page/mobile/default.ts",
+        "src/server/core/sequelize.ts",
+        "src/server/models/user-model.ts",
+        "src/server/modules/user.ts",
+        "src/server/www.ts",
+        "typings/bluebird/bluebird.d.ts",
+        "typings/consolidate/consolidate.d.ts",
+        "typings/express/express.d.ts",
+        "typings/lodash/lodash.d.ts",
+        "typings/mime/mime.d.ts",
+        "typings/node/node.d.ts",
+        "typings/sequelize/sequelize.d.ts",
+        "typings/serve-static/serve-static.d.ts",
+        "typings/tsd.d.ts",
+        "typings/validator/validator.d.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}
