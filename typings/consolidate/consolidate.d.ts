@@ -8,6 +8,10 @@
 /// <reference path="../node/node.d.ts" />
 
 declare module "consolidate" {
+	interface Handlebars {
+		registerHelper: Function
+	}
+
 	export function clearCache(): void;
 	export var jade: (path: String, options: any, fn: any) => void;
 	export var dust: (path: String, options: any, fn: any) => void;
@@ -21,7 +25,7 @@ declare module "consolidate" {
 	export var whiskers: (path: String, options: any, fn: any) => void;
 	//export var 'haml-coffee':Function;
 	export var hogan: (path: String, options: any, fn: any) => void;
-	export var handlebars: (path: String, options: any, fn: any) => void;
+	export var handlebars: (path: String, options: any, fn: any) => Handlebars;
 	export var underscore: (path: String, options: any, fn: any) => void;
 	export var qejs: (path: String, options: any, fn: any) => void;
 	export var walrus: (path: String, options: any, fn: any) => void;

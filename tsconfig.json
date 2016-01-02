@@ -35,6 +35,8 @@
         "typings/bluebird/bluebird.d.ts",
         "typings/consolidate/consolidate.d.ts",
         "typings/express/express.d.ts",
+        "typings/handlebars-layouts/handlebars-layouts.d.ts",
+        "typings/handlebars/handlebars.d.ts",
         "typings/lodash/lodash.d.ts",
         "typings/mime/mime.d.ts",
         "typings/node/node.d.ts",

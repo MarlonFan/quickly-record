@@ -1,12 +1,16 @@
 import * as Path from 'path';
 
 import * as express from 'express';
-import { handlebars } from 'consolidate';
+import { handlebars as hbs } from 'consolidate';
+import * as handlebars from 'handlebars';
+import * as layouts from 'handlebars-layout';
 import { Router } from 'vio';
+
+layouts.register(handlebars);
 
 let app = express();
 
-app.engine('hbs', handlebars);
+app.engine('hbs', hbs);
 
 let apiRouter = new Router(app, {
     routesRoot: Path.join(__dirname, '../api'),
